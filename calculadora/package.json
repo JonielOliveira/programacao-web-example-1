@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc && npx cpx \"src/*.{html,css,ico}\" dist",
-    "console": "node dist/index.js",
+    "console": "node dist/console.js",
     "start": "npx live-server dist"
   },
   "keywords": [],
