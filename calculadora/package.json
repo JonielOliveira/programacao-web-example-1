@@ -4,16 +4,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
-    "dev": "node dist/index.js"
+    "build": "npx tsc && npx cpx \"src/*.{html,css,ico}\" dist",
+    "console": "node dist/index.js",
+    "start": "npx live-server dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
     "@types/readline-sync": "^1.4.8",
-    "readline-sync": "^1.4.10",
+    "cpx": "^1.5.0",
+    "live-server": "^1.2.2",
     "typescript": "^5.8.3"
   }
 }
